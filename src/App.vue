@@ -45,10 +45,14 @@ export default {
       })
     },
     parseMessage: function () {
+      if(this.match('hi'))
+        this.robotMessage('Hi, tell me about yourself')
+      if(this.match('hello'))
+        this.robotMessage('Hello. Tell me about yourself')
       if(this.match('what[^ ]* up') || this.match('sup') || this.match('how are you'))
-        this.robotMessage('I\'m fine thank you.')
-      if(this.match('bingo!'))
-        this.robotMessage('ding, ding, ding! We have a winner')
+        this.robotMessage('I\'m fine thank you. Let\'s talk about you')
+      if(this.match('I*feel') || this.match('I[^ ]*m feeling'))
+        this.robotMessage('Why do you feel that way?')
     },
     match: function (regex) {
       return new RegExp(regex).test(this.message.toLowerCase())
