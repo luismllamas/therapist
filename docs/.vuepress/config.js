@@ -10,8 +10,9 @@ module.exports = {
       sidebar: {
         '/guide/': [
           '',
-          'frontend',
-          'backend'
+          'VuePressGuide',
+          'Deploying',
+          'DeployingDocs'
         ]
       }
     }
