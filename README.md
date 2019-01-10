@@ -30,7 +30,7 @@ To run the tests, run:
 yarn run test
 ```
 
-### Lints and fixes files
+### Lints and Fix Files
 Run:
 ```
 yarn run lint
